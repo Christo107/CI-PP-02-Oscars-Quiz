@@ -12,7 +12,9 @@
 <body>
     <header>
         <span class="welcome-text">And the Oscar goes to...</span>
-        <h1 class="logo">The Ultimate Oscars Quiz</h1>
+        <div class="logo-container">
+            <img src="./assets/images/cinema_film2.png" class="cinema-film" alt="decorative cinema film"><h1 class="logo">The Ultimate Oscars Quiz</h1>
+        </div>
     </header>
 <!-- main content area-->
     <section class="page-content">
@@ -20,13 +22,15 @@
             <img src="./assets/images/oscar_statue.png" alt="oscar statue" class="oscar-statue-img">
             <img src="./assets/images/oscar_statue.png" alt="oscar statue" class="oscar-statue-img">
         </div>
-        <img src="./assets/images/cinema_film2.png" class="cinema-film">
+        <!-- <img src="./assets/images/cinema_film2.png" class="cinema-film" alt="decorative cinema film"> -->
         <div class="game-area">
-            <div class="initial-state hide">
+            <div class="initial-state">
+                <h2>A fun quiz for all the movie buffs</h2>
+                <p>The quiz consists of 10 questions about the Oscars starting from its first ceremony in 1930 right through to the present</p>
                 <button class="start-game-btn btn">Let's Play!</button>
                 <button class="game-rules-btn btn">How to play</button>
             </div>
-            <div class="question-area">
+            <div class="question-area hide">
                 <div class="score-area">Score goes here</div>
                 <div class="question-text">Which Italian actor won the Best Actor oscar in 1999?</div>
                     <div class="answer-btns-container">

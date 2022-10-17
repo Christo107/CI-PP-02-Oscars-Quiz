@@ -50,6 +50,7 @@ header {
     box-shadow: 5px 5px 10px 5px rgb(36 36 36 / 42%);
     font-size: 150%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .logo {
@@ -63,11 +64,19 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    max-height: 150px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .cinema-film {
     z-index: -999;
-    position: fixed;
-    bottom: 75px;
-    left:25px;
+    width:250px;
+    margin-right: -75px
 }
 
 .oscar-statue-container {
@@ -87,8 +96,7 @@ header {
 }
 
 .oscar-statue-img {
-    /* max-width: 40%;
-    height: auto; */
+    padding: 40px;
 }
 
 .game-area {
@@ -103,7 +111,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    box-shadow: 5px 5px 10px 5px  rgb(36 36 36 / 42%);
+    box-shadow: 5px 5px 10px 5px  rgb(0 0 0 / 42%);
 }
 
 .initial-state {
@@ -112,6 +120,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    text-align: center;
 }
 
 .start-game-btn {
