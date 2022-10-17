@@ -17,6 +17,67 @@ body {
     min-height: 1200px;
 }
 
+.full-page-background-image {
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 250px 75px 250px;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3em;
+    color: #fff;
+}
+
+.btn {
+    box-shadow: 5px 5px 10px 5px  rgb(36 36 36 / 42%);
+    margin: 2% 0;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px 5px rgb(36 36 36 / 42%);
+    font-size: 150%;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 400%;
+    font-weight: 700;
+    /* color: #cf920f; */
+    background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game-area {
+    background-color: #cf920f; /* fallback color for older browsers */
+    /* gradient background created by Arjan van den Bs https://codepen.io/bingwa/pen/vYERWpv */
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    width: 85%;
+    height: 60vh;
+    max-width: 800px;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    box-shadow: 5px 5px 10px 5px  rgb(36 36 36 / 42%);
+}
+
 .initial-state {
     height: 100%;
     display: flex;
