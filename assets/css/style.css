@@ -194,7 +194,8 @@ header {
 }
 
 .btn:hover {
-    background-image: linear-gradient(to right top, #3c1053, #591f61, #752f6f, #91407c, #ad5389);
+    /* background-image: linear-gradient(to right top, #3c1053, #591f61, #752f6f, #91407c, #ad5389); */
+    background-image: linear-gradient(to right, #000000, #141414, #050505, #2e2d2d, #050505, #111111, #050505);
     color: #fff;
 }
 
