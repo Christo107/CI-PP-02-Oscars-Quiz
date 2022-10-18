@@ -49,13 +49,13 @@ header {
     border-radius: 10px;
     border: none;
     box-shadow: 5px 5px 10px 5px rgb(36 36 36 / 42%);
-    font-size: 150%;
+    font-size: 125%;
     overflow: hidden;
     cursor: pointer;
 }
 
 .logo {
-    font-size: 400%;
+    font-size: 300%;
     font-weight: 700;
     /* color: #cf920f; */
     background-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
@@ -179,8 +179,9 @@ header {
 }
 
 .answer-btn {
-    width: 45%;
-    height: 2.5em;
+    /* width: 45%; */
+    min-width: 100%;
+    height: 2em;
     padding: 1%;
 }
 
