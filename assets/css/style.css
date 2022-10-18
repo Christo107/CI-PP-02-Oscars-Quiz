@@ -145,7 +145,7 @@ header {
     width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
     font-size: 150%;
@@ -153,7 +153,6 @@ header {
 
 .score-area img {
     width: 40px;
-    margin-right: 20px;
 }
 
 .question-text {
@@ -169,6 +168,7 @@ header {
     font-size: 150%;
 }
 
+/* button styles */
 .answer-btns-container {
     width: 85%;
     display: flex;
@@ -184,9 +184,15 @@ header {
     padding: 1%;
 }
 
-.quit-game-btn, .next-question-btn {
+.quit-game-btn {
     width: 25%;
-    height: 2.5em;
+    height: 1.5em;
+}
+
+.submit-answer-btn, .next-question-btn {
+    width: 50%;
+    height: 1.5em;
+    margin: 10px auto;
 }
 
 .next-question-btn i {
