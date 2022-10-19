@@ -1,8 +1,8 @@
 const startButton = document.getElementById("start-quiz")
 const questionArea = document.getElementById("question-area")
 const initialState = document.getElementById("initial-state")
-const question = document.getElementById("question")
-const answer = document.getElementById("answer-buttons")
+const questionElement = document.getElementById("question-text")
+const answers = document.getElementsByClassName("answer-btn")
 
 let shuffleQuestions, currentQuestionIndex
 
@@ -20,8 +20,14 @@ function loadNextQuestion() {
     showQuestion(shuffleQuestions[currentQuestionIndex])
 }
 
-function showQuestion(question) {
+function showQuestion(q) {
+    questionElement.textContent = q.question;
+    let answerChoices = document.querySelectorAll(".answer-btn")
+    console.log(answerChoices)
 
+    answerChoices.forEach(function(element, index) {
+        element.textContent = q.answers[index].text;
+    })
 }
 
 function selectAnswer() {

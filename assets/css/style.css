@@ -194,6 +194,16 @@ header {
     width: 100%;
     height: 2em;
     margin: 10px auto;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 5px 5px 10px 5px  rgb(36 36 36 / 42%);
+    margin: 2% 0;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px 5px rgb(36 36 36 / 42%);
+    font-size: 125%;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .next-question-btn i {
@@ -217,9 +227,13 @@ header {
 }
 
 .btn:hover {
-    /* background-image: linear-gradient(to right top, #3c1053, #591f61, #752f6f, #91407c, #ad5389); */
     background-image: linear-gradient(to right, #000000, #141414, #050505, #2e2d2d, #050505, #111111, #050505);
     color: #fff;
+}
+
+.submit-answer-btn:hover, .next-question-btn:hover {
+    background-color: #fff;
+    color: #3a3a3a;
 }
 
 .footer {
