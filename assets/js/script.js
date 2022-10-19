@@ -3,10 +3,14 @@ const questionArea = document.getElementById("question-area")
 const initialState = document.getElementById("initial-state")
 const questionElement = document.getElementById("question-text")
 const answers = document.getElementsByClassName("answer-btn")
+const selectedAnswer = document.getElementsByClassName("selected-answer")
+const submitAnswer = document.getElementsByClassName("submit-answer-btn")
+const correctAnswerElement = document.getElementById("correct-answers")
 
 let shuffleQuestions, currentQuestionIndex
 
 startButton.addEventListener("click", startQuiz)
+// submitAnswer.addEventListener("click", checkAnswer())
  
 function startQuiz() {
     initialState.classList.add("hide")
@@ -23,15 +27,22 @@ function loadNextQuestion() {
 function showQuestion(q) {
     questionElement.textContent = q.question;
     let answerChoices = document.querySelectorAll(".answer-btn")
-    console.log(answerChoices)
 
     answerChoices.forEach(function(element, index) {
         element.textContent = q.answers[index].text;
+
+        element.addEventListener('click', function(){
+            element.classList.add("selected-answer")
+        })
     })
 }
 
-function selectAnswer() {
-
+ function checkAnswer() {
+    //  if (selectedAnswer === true) {
+    //      alert("Good job! You got it right!");
+    // } else {
+    //      alert(`Sorry, that was incorrect. The correct answer was ${questions.answer}`)
+    //  }
 }
 
 const questions = [

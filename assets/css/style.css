@@ -226,6 +226,11 @@ header {
     color: #fff;
 }
 
+.selected-answer {
+    background-color: rgb(19, 19, 19);
+    color: #fff;
+}
+
 .btn:hover {
     background-image: linear-gradient(to right, #000000, #141414, #050505, #2e2d2d, #050505, #111111, #050505);
     color: #fff;
